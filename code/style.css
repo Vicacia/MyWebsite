@@ -1,0 +1,214 @@
+
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #f5fbff;
+    max-width: 1400px;
+    color: #3A3A3A;
+    transition: background-color 0.3s ease;
+}
+
+.dark-theme {
+    background-color: #161616  ;
+    color: #e0e0e0 ;
+    transition: background-color 0.3s ease;
+}
+
+.header {
+    display: flex;
+    margin: 10px 200px 0px 200px;
+    width: 1000px;
+    justify-content: center;
+}
+
+.top {
+
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 72px;
+    background-color: #cfdde6;
+    border-radius: 3px;
+    max-width: 1000px;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    height: 72px;
+    width: 500px;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.title {    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 72px;
+    width: 500px;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Fredoka', 'serif';
+    font-weight: 400;
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
+
+.heart1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 48px;
+    height: 48px;
+    transition: 0.3s ease;
+    margin: 0 5px 0 5px;
+}
+
+.heart1:hover {
+    transform: scale(1.2);
+}
+
+.instagram_icon, .mail_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.instagram_button, .mail_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 15px 0 0;
+}
+
+.instagram_icon:hover, .mail_icon:hover {
+    transform: scale(0.8);
+    opacity: 0.6;
+
+}
+
+/*
+.heart2 {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 128px;
+    height: 128px;
+    padding-left: 600px;
+}
+*/
+
+
+.divider_container {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 4px auto;
+}
+
+.divider {
+    background-color: #3A3A3A;
+    width: 1200px;
+    height: 1.5px;
+}
+
+.bottom_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    height: 6000px;
+}
+
+.left_content, .right_content {
+    display: flex;
+    width: 200px ;
+    height: 6000px auto;
+    
+}
+
+.main_content {
+    display: flex;
+    width: 1000px;
+    height: 6000px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 5px 200px 5px 200px;
+    width: 1000px;
+    height: 40px;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 800px;
+    height: 40px;
+    background-color: #cfdde6;
+    border-radius: 3px;
+}
+
+.theme-change {
+    display: flex;
+    border: none;
+    background-color: #cfdde6;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.theme-change:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+.theme-image {
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+
+
+.dark-theme .menu-box, .dark-theme .top {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.dark-theme .top, .dark-theme .divider, .dark-theme .menu-box, .dark-theme .theme-change {
+    background-color: #2a2d38;
+    color: #e0e0e0;
+    transition: 0.3s ease;
+}
+
+.dark-theme .divider {
+    background-color: #4a4f5b;
+}
+
+.dark-theme .mail_button,.dark-theme .instagram_button {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    opacity: 0.7;
+}
